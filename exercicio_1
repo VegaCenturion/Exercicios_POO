@@ -1,0 +1,23 @@
+public class Gatinho{ // Modelo de objeto
+
+	public static void main(String[] args){
+		gato gatoObj = new gato();
+			gatoObj.nome = "Frajola";
+			gatoObj.raca = "Siames";
+			gatoObj.idade = 20.4;
+			gatoObj.vivo = true;
+		
+		gatoObj.miar();
+	}
+
+
+public class gato { //Modelo de classe
+	boolean vivo;
+	String raca;
+	double idade;		
+	String nome;
+	
+		void miar() {
+			System.out.println("Miaau!");
+		}
+}
