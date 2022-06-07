@@ -1,0 +1,21 @@
+package execs;
+import java.util.Scanner;
+public class exec4 {
+
+	public static void main(String[] args) {
+
+		Scanner valor = new Scanner(System.in);
+		int valor_input;
+		System.out.println("digite uma valor:");
+		valor_input = valor.nextInt();
+		
+		int i = 1;
+		while (i <= 10) {
+			System.out.println(i + " x " + valor_input + ": " + valor_input * i);
+			i++;
+		}
+		
+		valor.close();
+	}
+
+}
