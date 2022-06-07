@@ -19,3 +19,23 @@ public class exec4 {
 	}
 
 }
+____________________________________________________________________________________________
+package execs;
+import java.util.Scanner;
+public class exec4 {
+
+	public static void main(String[] args) {
+
+		Scanner valor = new Scanner(System.in);
+		int valor_input;
+		System.out.println("digite uma valor:");
+		valor_input = valor.nextInt();
+		
+		for (int nova = valor_input; nova <= 100000000; nova++) {
+			System.out.println(nova);
+		}
+		
+		valor.close();
+	}
+
+}
