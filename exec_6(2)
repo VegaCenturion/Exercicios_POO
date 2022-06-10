@@ -1,0 +1,15 @@
+package aula;
+
+public class Casa {
+	String cor;
+	int numero;
+	String janela;
+	
+	public static void Casa1 (){
+		System.out.println("A casa de número 1 tem cor azul, ccom a janela quadrada");
+	}
+
+	public static void Casa2 (){
+		System.out.println("A casa de número 2 tem cor vermelha, com a janela redonda");
+	}
+}
