@@ -5,10 +5,14 @@ public class Caixa {
 	 public static void main(String[] args) {
 		Conta c = new Conta();
 		Conta b = new Conta();
+		Conta a = new Conta();
 		Scanner Leitor = new Scanner(System.in);
 		c.criar (c);
 		b.criar (b);
-		c.transferir(c,b);
+		a.criar (a);
+		c.transferir(c, b);
+		c.transferir(b, a);
+		c.transferir(a, c);
 		System.out.println("Digite o valor desejado pra o saque: \n");
 		double Valor = Leitor.nextDouble();
 		if(c.Sacar(Valor)){
