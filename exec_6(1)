@@ -1,0 +1,20 @@
+package aula;
+
+public class Casas {
+	public static void main(String[] args) {
+		
+		Casa Cs1 = new Casa();
+		Cs1.cor = "azul";
+		Cs1.numero = 1;
+		Cs1.janela = "quadrada";
+		
+		Casa Cs2 = new Casa();
+		Cs2.cor = "vermelha";
+		Cs2.numero = 2;
+		Cs2.janela = "redonda";
+		
+		
+		Casa.Casa1 ();
+		Casa.Casa2 ();
+	}
+}
