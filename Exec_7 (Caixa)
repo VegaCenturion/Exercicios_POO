@@ -1,0 +1,21 @@
+package aula;
+import java.util.Scanner;
+
+public class Caixa {
+	 public static void main(String[] args) {
+		Conta c = new Conta();
+		Conta b = new Conta();
+		Scanner Leitor = new Scanner(System.in);
+		c.criar (c);
+		b.criar (b);
+		c.transferir(c,b);
+		System.out.println("Digite o valor desejado pra o saque: \n");
+		double Valor = Leitor.nextDouble();
+		if(c.Sacar(Valor)){
+			System.out.println("O R$" + Valor + " foi liberado");
+		} else {
+			System.out.println("O R$" + Valor + " não esta disponivel");
+ 	}
+		Leitor.close();
+}
+}
