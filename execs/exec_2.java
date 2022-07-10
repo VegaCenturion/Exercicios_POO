@@ -8,8 +8,8 @@ public class exec_2{
 		b = valor.nextInt();
 		c = a + b;
 		d = c / 2;
-		System.out.println(" a soma é: " + c);
-		System.out.println(" a media é: " + d);
+		System.out.println(" a soma Ã©: " + c);
+		System.out.println(" a media Ã©: " + d);
 		valor.close();
 		
 	}
