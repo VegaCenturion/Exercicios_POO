@@ -14,13 +14,13 @@ public class ContaBancaria {
 
 	public int getDataAbertura() {
 		int[] data = new int [3];
-			data[0] = dataAbertura.getMês();
+			data[0] = dataAbertura.getMÃªs();
 			data[1] = dataAbertura.getAno();
 			data[2] = dataAbertura.getDia();
 			return 0;
 	}
 	public String dataAb(){
-		return + dataAbertura.getMês() + "/" + dataAbertura.getAno() + "/" + dataAbertura.getDia();
+		return + dataAbertura.getMÃªs() + "/" + dataAbertura.getAno() + "/" + dataAbertura.getDia();
 	}  
 
 	public void setDataAbertura(Data dataAbertura) {
