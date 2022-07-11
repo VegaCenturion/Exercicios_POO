@@ -13,9 +13,9 @@ public class Teste {
 		Animal a = new Leao();
 		Leao b = (Leao)a;
 		b.Rugir();
-		/* a vari·vel Animal y aponta para um objeto do tipo Leao, porÈm a vari·vel 
-		e da classe Animal, por isso e impossivel usar o metÛdo Rugir em y.
-		Podendo utilizar do metÛdo Correr pois Leao tambÈm possui
+		/* a vari√°vel Animal y aponta para um objeto do tipo Leao, por√©m a vari√°vel 
+		e da classe Animal, por isso e impossivel usar o met√≥do Rugir em y.
+		Podendo utilizar do met√≥do Correr pois Leao tamb√©m possui
 		o metodo Correr*/
 		a.setNome("Scar");
 		System.out.println(a.getNome());
