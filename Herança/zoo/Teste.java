@@ -1,9 +1,9 @@
-package Java;
 import java.util.Scanner;
 public class Teste {
 
 	public static void main(String[] args) {
 		Leao x = new Leao();
+		Scanner sc = new Scanner(System.in);
 		x.setNome("Simba");
 		System.out.println(x.getNome());
 		x.Rugir();
@@ -25,9 +25,15 @@ public class Teste {
 		a.Correr();
 		u.Correr();
 		b.setNome("Kovu");
+		Leao x3 = new Leao();
+		System.out.println("entre com o nome do leão");
+		x3.setNome(sc.nextLine());
+		System.out.println(x3.getNome());
+		x3.Rugir();
 		System.out.println(b.getNome());
 		Urso t = new Urso();
 		t.Correr();
+		x3.Correr();
 		Animal [] cor = new Animal[4];
 		cor[0] = new Leao();
 		cor[1] = new Urso();
@@ -37,9 +43,9 @@ public class Teste {
 		for (int i = 0; i < cor.length; i++) {
 			cor[i].Correr();
 			if(cor[i] instanceof Leao){
-				Leao b = (Leao) cor[i];
 				b.Rugir();
 			}
 		}
+	sc.close();
 	}
 }
