@@ -31,8 +31,8 @@ public class TestaPessoa {
         f1.fazerAniv();
         f1.Trabalhar();
         p1.setNome("Moacir");
-        //System.out.println("Digite seu nome:");
-        //p1.getNome((sc.nextLine());
+        System.out.println("Digite seu nome:");
+        p1.setNome((sc.nextLine());
         p1.setEspecialidade("Professor de POO");
         p1.setIdade(42);
         p1.setSalario(7550.00);
