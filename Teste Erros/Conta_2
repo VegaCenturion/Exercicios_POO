@@ -1,0 +1,44 @@
+package Pacote;
+
+public class Conta {
+
+	private double saldo;
+	
+	public Conta(String nextLine) {
+	
+	}
+	public static int HH(int teste) {
+		int [] ar = new int[1];
+		System.out.println("Operação efetuada" + ar[1]);
+			for(int i = 0; i <= 3; i++) {
+				ar[i] = i;
+				System.out.println(i);
+			}
+			return teste;
+		}
+	public void sacar(double valor)throws SDException {
+		if (valor>saldo) {
+			System.out.println("Impossivel né cria\n");
+			
+			/*teste||caso falte o Try/Catch receberiamos o erro
+			(IndexOutOfBoundsException) ao inves do 
+			(Runtime Exception) */
+			try{
+				HH(4);
+			}catch(IndexOutOfBoundsException e){
+				
+			}
+			throw new SDException("GADO DO CARALHO-=-VOCÊ E POBRE FILHA DA PUTA\n");
+		}else {
+			System.out.println("AI SIM MEU CRIA\n");
+			saldo-=valor;
+			//return true;
+		}
+	}
+	public void depositar(double valor) {
+		saldo += valor;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+}
